@@ -12,16 +12,16 @@
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/images/SVG/BMW.svg" class="" alt="BWM Logo" />
       </a>
-      <button onclick="mudarMenu()" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+      <button onclick="mudarMenu()" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
         <!-- Criar script para mostrar e esconder -->
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Novos</a>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:p-0" aria-current="page">Novos</a>
           </li>
           <li>
             <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Seminovos</a>
@@ -39,14 +39,26 @@
               <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Sobre Nós</a>
             </li>
           </li>
+
+          <li>
+            <img class="inline-flex" src="../assets/images/SVG/map pin.svg"> <span>Localização</span>
+          </li>
+          <li>
+            <img class="inline-flex" src="../assets/images/SVG/phone.svg"> <span>Telefones</span>
+          </li>
+          <li>
+            <img class="inline-flex" src="../assets/images/SVG/whatsapp.svg"> <span>WhatsApp</span>
+          </li>
         </ul>
+
       </div>
+
     </div>
   </nav>
 
   <section class="m-5">
-    <h1 class="text-2xl text-center my-5">ENTRE EM CONTATO</h1>
-    <form id="form-contato" class="grid">
+    <h1 class="text-2xl text-center my-5 lg:mt-20">ENTRE EM CONTATO</h1>
+    <form id="form-contato" class="grid lg:grid-cols-2 lg:mx-30">
       <input required type="text" placeholder="Nome" class="border p-3 m-4 text-gray-500 rounded-sm" name="nome">
 
       <input required type="email" placeholder="E-mail" class="border p-3 m-4 text-gray-500 rounded-sm" name="email">
@@ -60,18 +72,18 @@
         <option value="opt3">Opção 3</option>
       </select>
 
-      <textarea required name="mensagem" placeholder="Mensagem" class="border p-3 m-4 text-gray-500 rounded-sm"></textarea>
+      <textarea required name="mensagem" placeholder="Mensagem" class="border p-3 m-4 text-gray-500 rounded-sm lg:col-span-2"></textarea>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center lg:col-span-2">
         <input required type="checkbox" name="politica">
         <span class="mx-5 my-2">Aceito a <a href="#" class="text-blue-600">Política de Privacidade</a></span>
       </div>
 
-      <button type="submit" class="bg-blue-700 text-neutral-50 m-3 w-50 h-15 justify-self-center">Enviar</button>
+      <button type="submit" class="bg-blue-700 text-neutral-50 m-3 w-50 h-15 justify-self-center lg:col-span-2">Enviar</button>
     </form>
   </section>
 
-  <footer class="grid grid-cols-2 absolute bottom-0 bg-gray-100 p-5">
+  <footer class="grid grid-cols-2 absolute bottom-0 bg-gray-100 w-full p-5">
     <div class="esquerda col-1">
       <ul class="flex my-2">
         <li class="mx-2">
@@ -97,7 +109,7 @@
       <span class="hidden">Feito por: <img src="../assets/images/PNG/logo-alpes 2.png" alt="" srcset=""></span>
     </div>
     
-    <div class="direita cols-2 flex justify-end items-end">
+    <div class="direita cols-2 flex justify-end items-end md:items-start">
       <span>Feito por: <img src="../assets/images/PNG/logo-alpes 2.png" alt="logo-alpes"></span>
     </div>
   </footer>
