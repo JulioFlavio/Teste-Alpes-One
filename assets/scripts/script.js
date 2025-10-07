@@ -80,6 +80,6 @@ form.addEventListener("submit", function (event) {
     icon: "success"
   });
 
-  setTimeout(() => form.submit(), 1000);
+  setTimeout(() => form.submit(), 5000);
 });
 
