@@ -58,28 +58,28 @@
 
   <section class="m-5">
     <h1 class="text-2xl text-center my-5 lg:mt-20">ENTRE EM CONTATO</h1>
-    <form id="form-contato" class="grid lg:grid-cols-2 lg:mx-30">
-      <input required data-attribute="Nome" id="nomeForm" type="text" placeholder="Nome" class="border p-3 m-4 text-gray-500 rounded-sm" name="nome">
+    <form id="form_contato" class="grid lg:grid-cols-2 lg:mx-30">
+      <input data-attribute="Nome" id="nomeForm" type="text" placeholder="Nome" class="border p-3 m-4 text-gray-500 rounded-sm" name="nome">
 
-      <input required data-attribute="Email" id="emailForm" type="email" placeholder="E-mail" class="border p-3 m-4 text-gray-500 rounded-sm" name="email">
+      <input data-attribute="Email" id="emailForm" type="email" placeholder="E-mail" class="border p-3 m-4 text-gray-500 rounded-sm" name="email">
 
-      <input required data-attribute="Telefone" id="telForm" type="tel" placeholder="Telefone" class="border p-3 m-4 text-gray-500 rounded-sm">
+      <input data-attribute="Telefone" id="telForm" type="tel" placeholder="Telefone" class="border p-3 m-4 text-gray-500 rounded-sm">
 
-      <select required data-attribute="Assunto" id="assuntoForm" name="assunto" class="border p-3 m-4 text-gray-500">
-        <option value="optdefault" disabled selected hidden>Assunto</option>
+      <select data-attribute="Assunto" id="assuntoForm" name="assunto" class="border p-3 m-4 text-gray-500">
+        <option value="" disabled selected hidden>Assunto</option>
         <option value="opt1">Opção 1</option>
         <option value="opt2">Opção 2</option>
         <option value="opt3">Opção 3</option>
       </select>
 
-      <textarea required data-attribute="Mensagem" id="mensagemForm" name="mensagem" placeholder="Mensagem" class="border p-3 m-4 text-gray-500 rounded-sm lg:col-span-2"></textarea>
+      <textarea data-attribute="Mensagem" id="mensagemForm" name="mensagem" placeholder="Mensagem" class="border p-3 m-4 text-gray-500 rounded-sm lg:col-span-2"></textarea>
 
       <div class="flex justify-center lg:col-span-2">
-        <input id="politica-privacidade" required type="checkbox" name="politica">
-        <span class="mx-5 my-2">Aceito a <a href="#" class="text-blue-600">Política de Privacidade</a></span>
+        <input id="politica-privacidade" type="checkbox" name="termos">
+        <label for="termos" class="mx-5 my-2">Aceito a <a href="#" class="text-blue-600">Política de Privacidade</a></label>
       </div>
 
-      <button onclick="enviarFormulario()" class="bg-blue-700 text-neutral-50 m-3 w-50 h-15 justify-self-center lg:col-span-2">Enviar</button>
+      <button type="submit" class="bg-blue-700 text-neutral-50 m-3 w-50 h-15 justify-self-center lg:col-span-2">Enviar</button>
     </form>
   </section>
 
