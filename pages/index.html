@@ -63,7 +63,7 @@
 
       <input data-attribute="Email" id="emailForm" type="email" placeholder="E-mail" class="border p-3 m-4 text-gray-500 rounded-sm" name="email">
 
-      <input data-attribute="Telefone" id="telForm" type="tel" placeholder="Telefone" class="border p-3 m-4 text-gray-500 rounded-sm">
+      <input data-attribute="Telefone" id="telForm" type="tel" maxlength="15" placeholder="Telefone" class="border p-3 m-4 text-gray-500 rounded-sm">
 
       <select data-attribute="Assunto" id="assuntoForm" name="assunto" class="border p-3 m-4 text-gray-500">
         <option value="" disabled selected hidden>Assunto</option>
@@ -75,8 +75,8 @@
       <textarea data-attribute="Mensagem" id="mensagemForm" name="mensagem" placeholder="Mensagem" class="border p-3 m-4 text-gray-500 rounded-sm lg:col-span-2"></textarea>
 
       <div class="flex justify-center lg:col-span-2">
-        <input id="politica-privacidade" type="checkbox" name="termos">
-        <label for="termos" class="mx-5 my-2">Aceito a <a href="#" class="text-blue-600">Política de Privacidade</a></label>
+        <input id="politica-privacidade" type="checkbox" name="termo">
+        <label for="termo" class="mx-5 my-2">Aceito a <a href="#" class="text-blue-600">Política de Privacidade</a></label>
       </div>
 
       <button type="submit" class="bg-blue-700 text-neutral-50 m-3 w-50 h-15 justify-self-center lg:col-span-2">Enviar</button>
